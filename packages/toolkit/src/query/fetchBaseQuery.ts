@@ -173,6 +173,9 @@ export type FetchBaseQueryMeta = { request: Request; response?: Response }
  *
  * @param {(params: Record<string, unknown>) => string} paramsSerializer
  * An optional function that can be used to stringify querystring parameters.
+ *
+ * @param {number} timeout
+ * A number in milliseconds that represents that maximum time a request can take before timing out.
  */
 export function fetchBaseQuery({
   baseUrl,
